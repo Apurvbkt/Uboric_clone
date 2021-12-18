@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDt7PoCjeLgHtWIeAt6A59M77NHYUJWMzLt35is36O2nhf0qL65nnqw6ndApdH4P1Ark&usqp=CAU">
+    <style>*{
+        font-family: sans-serif;
+      
+      }
+      body {
+        margin: 0;
+      }
+      .maindiv {
+        /* border: 3px solid red; */
+        height: 1050px;
+      }
+      #nav1 {
+        background-color: #1e516c;
+        height: 55px;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        margin-top: -15px;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+      }
+      .p1 {
+        margin-top: 25px;
+      }
+      .header {
+        display: flex;
+        /* justify-content: space-between; */
+      }
+      .logo1 {
+        width: 200px;
+        margin-left: 200px;
+        cursor: pointer;
+        margin-top: 55px;
+      }
+      .iconprofile {
+        width: 50px;
+        margin-left: 550px;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-top: 55px;
+      }
+      .input1 {
+        width: 400px;
+        height: 25px;
+        border: 2px solid;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-top: 70px;
+      }
+      .search {
+        width: 27px;
+        height: 31px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-top: 70px;
+      }
+      .search12 {
+        display: flex;
+        /* border: 1px solid red; */
+      }
+      .icon {
+        display: flex;
+        /* border: 1px solid red; */
+        
+        
+      }
+      .logo2 {
+        width: 40px;
+        /* margin-top: 5px; */
+        margin-top: 55px;
+      }
+      .head2 {
+        /* border: 1px solid red; */
+        /* height: 30px; */
+        width: 800px;
+        margin: auto;
+        display: flex;
+        font-family: sans-serif;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      
+      .secondp2,
+      .secondp3 {
+        /* border: 1px solid; */
+        padding: 10px;
+        /* height: 50px; */
+      }
+      .secondp2:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .secondp3 {
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 20px;
+        text-align: center;
+      }
+      
+      .secondp2,
+      .secondp3 {
+        /* border: 1px solid red; */
+        font-weight: bold;
+      }
+      .myacc {
+        /* line-height: px; */
+        /* border: 1px solid red; */
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+        color: #1e516c;
+        cursor: pointer;
+      }
+      .myacc > h2 {
+        font-size: 24px;
+        letter-spacing: 3px;
+        line-height: 28px;
+        font-weight: 700;
+      }
+      .myacc > h4 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .inside{
+          /* border: 2px solid red; */
+          width: 55%;
+          margin: auto;
+          
+      }
+      #name, #img, #price{
+          width: 250px;
+          height: 40px;
+          margin-left: 50px;
+          margin: 10px;
+          
+      }
+      .submit{
+          height: 40px;
+          width: 90px;
+          margin: 10px;
+          background-color: 
+#ffce61;
+border: 0px;
+
+      }
+       /* #select{
+           margin-left: 50px;
+       } */
+       button{
+           margin-left: 50px;
+           background-color: 
+#ffce61;
+
+border: 0ch;
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 50px;
+       }
+
+      </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div id="nav1">
+          <p class="p1">
+            FOR ONLINE PAYMENT EXTRA ₹50 DISCOUNT ON ORDERS ABOVE ₹500
+          </p>
+        </div>
+  
+        <div class="header">
+          <div>
+            <div class="search12">
+              <input class="input1" type="text" placeholder="search here..." />
+              <div>
+                <img
+                  class="search"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEOYAC7tc-hlCIvODyfP-XEY3wG-aNUsOYQ&usqp=CAU"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="logo1"
+              src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"
+              alt=""
+            />
+          </div>
+          <div class="icon">
+            <i>
+              <img
+                class="iconprofile"
+                src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"
+                alt=""
+            /></i>
+            <i>
+              <img
+                class="logo2"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAbv5TmdWfrY_MCkIV8hG3vFCZCR83EiwZN8kuDGWPWyhXgpVJW2Gz9nLKDYyX9ZxZec&usqp=CAU"
+                alt=""
+            /></i>
+          </div>
+        </div>
+        <div class="head2">
+          <div><p class="secondp2">Home</p></div>
+          <div><p class="secondp2">Categories</p></div>
+          <div><p class="secondp3">Customer/Guest login</p></div>
+          <div><p class="secondp2">Merchant/Bulk Order</p></div>
+          <div><p class="secondp2">Become A Seller</p></div>
+        </div>
+        <div class="myacc">
+          <h2>My account</h2>
+          <h4>Home > My account</h4>
+        </div>
+
+    <div class="inside">
+        <h1>ADMIN PAGE</h1>
+        <p>YOU CAN ADD PRODUCT OVER HERE:</p>
+    <form id="form">
+      <input id="name" type="text" placeholder="enter name of product" /><br>
+      <input id="price" type="number" placeholder="Enter price" />
+      <select id="select">
+          <option value="">-----</option>
+        <option value="tee">Kitchen Item</option>
+        <option value="shoes">Foot wear</option>
+        <option value="shirt">Speices</option>
+      </select><br>
+      <input id="img" type="text" placeholder="Enter image url" /> <br>
+      <input type="submit" class="submit" />
+    </form>
+
+    <button>Go to Product page</button>
+    </div> 
+
+    <div class="footer">
+      <div class="footertop">
+        <div>
+          <h2>What Our Customer Says</h2>
+        </div>
+        <div class="ftin">
+          <div class="txtf">
+            Auspicious range of foot wares. Premium branded products. Good
+            service and delivery duration. Super high value of customer. <br />
+            <br />
+            <br />
+            <br />
+            ⭐⭐⭐⭐-Cutomer
+          </div>
+          <div class="txtf">
+            Very big range of products and the services are very fast. i ordered
+            footwear and they delivered very quick.<br />
+            <br />
+            <br />
+            <br />
+            <br />
+            ⭐⭐⭐⭐-Cutomer
+          </div>
+          <div class="txtf">
+            Amazing veriaty of shoes in all brand..... Best showroom in Rajkot.
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            ⭐⭐⭐⭐ -Cutomer
+          </div>
+        </div>
+        <div>
+          <button>Add Your Review</button>
+        </div>
+      </div>
+      <div class="mainfoot">
+        <div class="infoot"></div>
+        <div>
+          <div class="imgfd">
+            <a href="">
+              <img
+                src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="span">
+            <span class="sp1">About Us</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="sp2"
+              >Contact</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="sp3"
+              >Shipping & Return</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="sp4"
+              >My Account</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="sp5"
+              >Privacy Policy</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="sp6"
+              >Become A Seller</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="sp7"
+              >Terms & Conditions</span
+            >
+          </div>
+          <div class="fdp">
+            <p>© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</p>
+          </div>
+          <div class="fimg">
+            <div>
+              <img
+                src="https://icons-for-free.com/iconfiles/png/512/black+facebook+line+social+icon-1320191608371298600.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://icon-library.com/images/instagram-icon-download/instagram-icon-download-7.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit", addItem);
+    var prod = JSON.parse(localStorage.getItem("shoppingItems")) || [];
+    function addItem(event) {
+      event.preventDefault();
+      var name = document.querySelector("#name").value;
+      var price = document.querySelector("#price").value;
+      var type = document.querySelector("#select").value;
+      var image = document.querySelector("#img").value;
+  
+      var prodObj = {
+        name: name,
+        price: price,
+        type: type,
+        image: image,
+      };
+      prod.push(prodObj);
+      localStorage.setItem("shoppingItems", JSON.stringify(prod));
+    }
+  
+    document.querySelector("button").addEventListener("click", function () {
+      window.location.href = "newprod.html";
+    });
+  </script>
+  

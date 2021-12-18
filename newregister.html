@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="loginnew.css" />
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDt7PoCjeLgHtWIeAt6A59M77NHYUJWMzLt35is36O2nhf0qL65nnqw6ndApdH4P1Ark&usqp=CAU">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div id="nav1">
+          <p class="p1">
+            FOR ONLINE PAYMENT EXTRA ₹50 DISCOUNT ON ORDERS ABOVE ₹500
+          </p>
+        </div>
+  
+        <div class="header">
+          <div>
+            <div class="search12">
+              <input class="input1" type="text" placeholder="search here..." />
+              <div>
+                <img
+                  class="search"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEOYAC7tc-hlCIvODyfP-XEY3wG-aNUsOYQ&usqp=CAU"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="logo1"
+              src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"
+              alt=""
+            />
+          </div>
+          <div class="icon">
+            <i>
+              <img
+                class="iconprofile"
+                src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"
+                alt=""
+            /></i>
+            <i>
+              <img
+                class="logo2"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAbv5TmdWfrY_MCkIV8hG3vFCZCR83EiwZN8kuDGWPWyhXgpVJW2Gz9nLKDYyX9ZxZec&usqp=CAU"
+                alt=""
+            /></i>
+          </div>
+        </div>
+        <div class="head2">
+          <div><p class="secondp2">Home</p></div>
+          <div><p class="secondp2">Categories</p></div>
+          <div><p class="secondp3">Customer/Guest login</p></div>
+          <div><p class="secondp2">Merchant/Bulk Order</p></div>
+          <div><p class="secondp2">Become A Seller</p></div>
+        </div>
+        <div class="myacc">
+          <h2>My account</h2>
+          <h4>Home > My account</h4>
+        </div>
+
+        <div class="inside">
+            <h2 class="fst">Register*</h2>
+            <p class="fst">Creating an account is quick and easy, <br> and will allow you to move through our checkout quicker.</p><br>
+            <p class="fst">Connect With:</p>
+            <div><img class="img1" src="https://onymos.com/wp-content/uploads/2020/10/google-signin-button-1024x260.png" alt=""></div>
+            <br><br>
+            <div class="fst">
+            <p> Email address <span style="color: red;">*</span> </p>
+            <input type="text" class="inputN" id="email"></div> <br><br>
+            <div class="fst">
+                <p> Password <span style="color: red;">*</span> </p>
+                <input type="text" id="password" class="inputN"></div>
+               <div class="fst"> A password will be sent to your email address.</div>
+                <br><br>
+               <a href="login.html"> <button class="fst"  id="click"><b> Register</b></button></a>
+                   <div class="fst, xxl">Your personal data will be used to support your <br> experience throughout this website, to manage access to your account, <br> and for other  purposes described in our privacy policy.</div>
+        </div> 
+        
+        
+</body>
+</html>
+<script>
+document.querySelector("#click").addEventListener("click", listn); 
+
+var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+
+function listn() {
+    // console.log("here");
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
+    var userCred = {
+        emailadd: email,
+        pass: password
+    };
+    userData.push(userCred);
+    localStorage.setItem("userDatabase", JSON.stringify(userData));
+}
+</script>
